@@ -29,7 +29,7 @@ const reducer = (state = {value: 0},action) => {
     }
 };
 
-const store = createStore(reducer);
+const store = createStore(reducer,window.devToolsExtension && window.devToolsExtension());
 
 const mapStateToProps = (state) => {
     return {
